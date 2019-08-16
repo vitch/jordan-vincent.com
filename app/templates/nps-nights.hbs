@@ -34,9 +34,9 @@
           </div>
         </div>
         <div class="park-group-body">
-          {{#each group.parks as |park|}}<!--
-          -->{{component park.componentName class="chart-wrapper"}}<!--
-       -->{{/each}}
+          {{#each group.parks as |park|~}}
+            {{component park.componentName class="chart-wrapper"}}
+          {{~/each}}
         </div>
       </div>
     {{/each}}
